@@ -5,7 +5,7 @@ export const API = axios.create({
   baseURL: process.env.REACT_APP_BASEURL,
 });
 
-// Set Authorization Token Header
+// Set Authorization Token Header oke
 export const setAuthToken = (token) => {
   if (token) {
     API.defaults.headers.common["Authorization"] = `Bearer ${token}`;
