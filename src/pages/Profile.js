@@ -20,7 +20,7 @@ export default function Profile() {
 
   const [state] = useContext(UserContext);
 
-  // const [transactions, setTransactions] = useState([]);
+  // const [transactions, setTransactions] = useState([]) haloguys;
 
   let { data: profile } = useQuery("profileCache", async () => {
     const response = await API.get("/profile");
